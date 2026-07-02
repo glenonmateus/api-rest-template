@@ -1,0 +1,2 @@
+include:
+  - ./_docker/database/docker-compose.yml
