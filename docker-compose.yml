@@ -1,2 +1,3 @@
 include:
   - ./_docker/database/docker-compose.yml
+  - ./_docker/api/docker-compose.yml

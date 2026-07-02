@@ -1,0 +1,15 @@
+services:
+  api:
+    build:
+      context: ../../
+      dockerfile: Dockerfile
+      args:
+        NODE_VERSION: ${NODE_VERSION:-24}
+        PORT: ${PORT:-3001}
+    environment:
+      PORT: ${PORT:-3001}
+    ports:
+      - ${PORT:-3001}:${PORT:-3001}
+    depends_on:
+      database:
+        condition: service_healthy
