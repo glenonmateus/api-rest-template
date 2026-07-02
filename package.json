@@ -1,0 +1,38 @@
+{
+  "name": "api-rest-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glenonmateus/api-rest-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/glenonmateus/api-rest-template/issues"
+  },
+  "homepage": "https://github.com/glenonmateus/api-rest-template#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "mariadb": "^3.5.3",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "morgan": "^1.11.0",
+    "nodemon": "^3.1.14",
+    "sequelize-cli": "^6.6.5",
+    "sucrase": "^3.35.1"
+  }
+}
