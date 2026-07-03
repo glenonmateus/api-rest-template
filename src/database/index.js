@@ -1,7 +1,7 @@
 import Sequelize from "sequelize";
 import databaseConfig from "../config/database.js";
 
-const connection = new Sequelize(databaseConfig);
+const connection = new Sequelize(`${databaseConfig}.${process.env.NODE_ENV}`);
 
 const models = [];
 
